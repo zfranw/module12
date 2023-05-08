@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Body Mass Index Calculator</title>
+	<style>
+		body {
+			text-align: center;
+		}
+	</style>
+  <style>
+    body {
+      background-image: url("background.jpg");
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+      width: 400px;
+      margin: 50px auto;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #800000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #e60000;
+    }
+
+
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet" >
+</head>
+<body>
+<h1>&nbsp; &nbsp; &nbsp; Body Mass Index Calculator&nbsp;</h1>
+<form>
+  <label for="weightInput">Your Weight In (kg):</label>
+  <input type="number" id="weightInput"><br><br>
+
+  <label for="heightInput">Your Height In (m):</label>
+  <input type="number" id="heightInput"><br><br>
+
+  <button type="button" id="calculateBtn">Your Body Mass Index</button>
+</form>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
